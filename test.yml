@@ -1,6 +1,7 @@
 name: Shell Commands
 
-on: [push]
+on: 
+  push:
 
 jobs:
   run-shell-command:
@@ -12,4 +13,3 @@ jobs:
         run: |
           node -v
           npm -v
-          
