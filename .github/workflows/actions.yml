@@ -7,6 +7,15 @@ on:
   push:
     branches:
       - master
+      - 'feature/*'
+      - '!feature/featC'
+    # branches-ignore:
+    #  - null
+    tags:
+      - v1.*
+    paths:
+      - '**.js'  
+      - 'filename.js'
   pull_request:
     branches:
       - master
