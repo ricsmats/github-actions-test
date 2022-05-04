@@ -32,6 +32,7 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
+          echo $GITHUB_ACTOR
           echo "${{ github.token }}"
       - name: Checkout
         uses: actions/checkout@v3
